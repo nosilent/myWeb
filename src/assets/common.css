@@ -1,0 +1,114 @@
+.text {
+    counter-reset: count2;
+}
+
+.text h2 {
+    counter-reset: count3;
+    counter-increment: count2;
+}
+
+.text h2::before {
+    content: counter(count2) ' ';
+}
+
+.text h3 {
+    counter-reset: count4;
+    counter-increment: count3;
+}
+
+.text h3::before {
+    content: counter(count2) '.'counter(count3) ' '
+}
+
+.text h4 {
+    counter-increment: count4;
+    counter-reset: count5;
+}
+
+.text h4::before {
+    content: counter(count2) '.'counter(count3) '.'counter(count4) ' '
+}
+
+.text h5 {
+    counter-reset: count6;
+    counter-increment: count5;
+}
+
+.text h5::before {
+    content: counter(count2) '.'counter(count3) '.'counter(count4) '.'counter(count5) ' '
+}
+
+.text h6 {
+    counter-increment: count6;
+}
+
+.text h6::before {
+    content: counter(count2) '.'counter(count3) '.'counter(count4) '.'counter(count5) '.'counter(count6) ' '
+}
+
+/* 内容 end */
+
+.menu p {
+    cursor: pointer;
+    line-height: 1.5;
+}
+.menu p:hover {
+    text-decoration: underline;
+    text-decoration-color: #1890ff;
+    color:  #1890ff
+}
+
+.menu {
+    counter-reset: count2;
+}
+
+.menu .h2 {
+    counter-reset: count3;
+    counter-increment: count2;
+    line-height: 2;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.menu .h2::before {
+    content: counter(count2) ' ';
+}
+
+.menu .h3 {
+    counter-reset: count4;
+    counter-increment: count3;
+    text-indent: 1em;
+}
+
+.menu .h3::before {
+    content: counter(count2) '.'counter(count3) ' '
+}
+
+.menu .h4 {
+    counter-increment: count4;
+    counter-reset: count5;
+    text-indent: 2em;
+}
+
+.menu .h4::before {
+    content: counter(count2) '.'counter(count3) '.'counter(count4) ' '
+}
+
+.menu .h5 {
+    counter-reset: count6;
+    counter-increment: count5;
+    text-indent: 3em;
+}
+
+.menu .h5::before {
+    content: counter(count2) '.'counter(count3) '.'counter(count4) '.'counter(count5) ' '
+}
+
+.menu .h6 {
+    counter-increment: count6;
+    text-indent: 4em;
+}
+
+.menu .h6::before {
+    content: counter(count2) '.'counter(count3) '.'counter(count4) '.'counter(count5) '.'counter(count6) ' '
+}

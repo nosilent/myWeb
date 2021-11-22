@@ -1,0 +1,146 @@
+{
+    "navData": [
+        {
+            "text": "前端",
+            "children": [
+                {
+                    "text": "html",
+                    "show": true,
+                    "url": "docs/html",
+                    "icon": "html"
+                },
+                {
+                    "text": "css",
+                    "show": true,
+                    "url": "docs/css",
+                    "icon": "css"
+                },
+                {
+                    "text": "js",
+                    "show": true,
+                    "url": "docs/js",
+                    "icon": "js"
+                },
+                {
+                    "text": "jquery",
+                    "show": false,
+                    "url": "docs/jquery",
+                    "icon": "jQuery"
+                },
+                {
+                    "text": "typescript",
+                    "show": false,
+                    "url": "docs/typescript",
+                    "icon": "ts"
+                },
+                {
+                    "text": "bootstrap",
+                    "show": true,
+                    "url": "docs/bootstrap",
+                    "icon": "bootstrap"
+                },
+                {
+                    "text": "vue",
+                    "show": true,
+                    "url": "docs/vue",
+                    "icon": "vue"
+                },
+                {
+                    "text": "react",
+                    "show": true,
+                    "url": "docs/react",
+                    "icon": "react"
+                },
+                {
+                    "text": "angular",
+                    "show": true,
+                    "url": "docs/angular",
+                    "icon": "angular"
+                }
+            ],
+            "icon": "web"
+        },
+        {
+            "text": "版本控制",
+            "children": [
+                {
+                    "text": "svn",
+                    "show": true,
+                    "url": "docs/git_svn"
+                }
+            ]
+        },
+        {
+            "text": "小程序",
+            "show": true,
+            "url": "docs/wxApp"
+        },
+        {
+            "text": "flutter",
+            "children": [
+                {
+                    "text": "dart",
+                    "show": true,
+                    "url": "docs/dart",
+                    "icon": "dart"
+                },
+                {
+                    "text": "flutter",
+                    "show": true,
+                    "url": "docs/flutter",
+                    "icon": "flutter"
+                }
+            ]
+        },
+        {
+            "text": "go",
+            "children":[
+                {
+                    "url": "docs/go",
+                    "text":"go基础",
+                    "icon": "go",
+                    "show": true
+                },
+                {
+                    "url":"docs/go笔记",
+                    "text":"go笔记",
+                    "icon":"go",
+                    "show":true
+                },
+                {
+                    "url": "docs/goweb",
+                    "text": "goweb",
+                    "icon": "go",
+                    "show": true
+                }
+            ]
+        },
+        {
+            "text": "mysql",
+            "show": true,
+            "url": "docs/mysql",
+            "icon": "sql"
+        }
+    ],
+    "title_end_tag": "title",
+    "index": "react",
+    "docs": "docs",
+    "music_list": [
+        "天空之城.mp3",
+        "梦中的婚礼.mp3",
+        "高山流水.mp3",
+        "约定.mp3",
+        "夜的钢琴曲五.mp3",
+        "Big Big World.mp3",
+        "Pour Elise.mp3",
+        "芦苇荡.mp3",
+        "莫失莫忘.mp3",
+        "Victory.mp3",
+        "The Mass.mp3",
+        "The Dawn.mp3",
+        "He's A Pirate.mp3",
+        "Hero's Theme.mp3",
+        "conquest of paradise.mp3",
+        "Aloha Heja He.mp3"
+    ]
+}
