@@ -1,5 +1,5 @@
 ## install
-1. 检测`install`方法是属性是否为true,若为true则直接返回
+1. 检测`install`方法的installed属性是否为true,若为true则直接返回
 ```js
 if (install.installed && _Vue === Vue) return
 install.installed = true
