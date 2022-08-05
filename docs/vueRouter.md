@@ -109,7 +109,52 @@ export function install (Vue) {
   strats.beforeRouteEnter = strats.beforeRouteLeave = strats.beforeRouteUpdate = strats.created
 }
 ```
+## vueRoute实例
+### constructor构造函数
+1. 属性初始化
+2. 根据配置项`routes`生成对应的路由
+3. 根据配置项`mode`确定使用`history模式`
+```js
+constructor (options: RouterOptions = {}) {
+    if (process.env.NODE_ENV !== 'production') {
+      warn(this instanceof VueRouter, `Router must be called with the new operator.`)
+    }
+    this.app = null
+    this.apps = []
+    this.options = options
+    this.beforeHooks = []
+    this.resolveHooks = []
+    this.afterHooks = []
+    this.matcher = createMatcher(options.routes || [], this)
 
+    let mode = options.mode || 'hash'
+    this.fallback =
+      mode === 'history' && !supportsPushState && options.fallback !== false
+    if (this.fallback) {
+      mode = 'hash'
+    }
+    if (!inBrowser) {
+      mode = 'abstract'
+    }
+    this.mode = mode
+
+    switch (mode) {
+      case 'history':
+        this.history = new HTML5History(this, options.base)
+        break
+      case 'hash':
+        this.history = new HashHistory(this, options.base, this.fallback)
+        break
+      case 'abstract':
+        this.history = new AbstractHistory(this, options.base)
+        break
+      default:
+        if (process.env.NODE_ENV !== 'production') {
+          assert(false, `invalid mode: ${mode}`)
+        }
+    }
+}
+```
 
 
 
